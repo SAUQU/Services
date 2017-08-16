@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.segundoauqui.services.MainActivity"
+    android:weightSum="1">
+
+  <Button
+      android:id="@+id/btnStartNormalService"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="startService"
+      android:text="Start Service"
+
+      />
+
+
+    <Button
+        android:onClick="startService"
+        android:text="Stop Service"
+        android:id="@+id/btnStopNormalService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="startService"
+        android:text="Start Intent Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStartIntentService"
+
+        />
+
+
+    <Button
+        android:onClick="startService"
+        android:text="Bind Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBindService"/>
+
+    <Button
+        android:onClick="startService"
+        android:text="UnBind Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUnBindService"/>
+
+  <Button
+      android:onClick="startService"
+      android:text="Receiving Number"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnSendI"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+  <Button
+      android:onClick="playSong"
+      android:layout_gravity="left"
+      android:adjustViewBounds="true"
+      android:background="@color/colorGreen"
+      android:layout_width="wrap_content"
+      android:layout_height="105dp"
+      android:id="@+id/playMusic"
+      android:text="PLAY"
+      android:icon="@drawable/ic_play_circle_outline_black_24dp"
+      android:layout_weight="0.29" />
+
+
+
+  <Button
+      android:onClick="stopSong"
+      android:background="@color/colorRed"
+      android:layout_gravity="end"
+      android:layout_width="wrap_content"
+      android:layout_height="105dp"
+      android:id="@+id/stopMusic"
+      android:text="STOP"
+      android:icon="@drawable/ic_stop_black_24dp"
+      android:layout_weight="0.40" />
+
+
+</LinearLayout>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="341dp"
+      android:src="@drawable/ic_library_music_black_24dp"/>
+
+  <EditText
+      android:numeric="decimal"
+      android:id="@+id/etText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.22"
+      android:hint="Enter Number"
+      android:gravity="center"
+      android:textSize="35dp"/>
+
+
+
+</LinearLayout>
